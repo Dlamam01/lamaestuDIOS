@@ -1,1 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>1.º ESO Matemáticas | Lama Estudios</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+        }
+
+        /* CABECERA */
+
+        header {
+            height: 76px;
+            padding: 0 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            border-bottom: 1px solid #e7edf5;
+        }
+
+        .logo a {
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 800;
+            color: #123c69;
+        }
+
+        nav {
+            display: flex;
+            gap: 34px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #475569;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        /* MIGAS DE PAN */
+
+        .breadcrumb {
+            max-width: 1100px;
+            margin: auto;
+            padding: 25px 25px 0;
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        .breadcrumb a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        /* PRESENTACIÓN */
+
+        .intro {
+            max-width: 1100px;
+            margin: auto;
+            padding: 55px 25px 55px;
+        }
+
+        .etiqueta {
+            color: #2563eb;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .intro h1 {
+            color: #123c69;
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            color: #64748b;
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 700px;
+        }
+
+        /* TEMAS */
+
+        .contenido {
+            max-width: 1100px;
+            margin: auto;
+            padding: 10px 25px 90px;
+        }
+
+        .contenido h2 {
+            color: #123c69;
+            font-size: 29px;
+            margin-bottom: 30px;
+        }
+
+        .temas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .tema {
+            display: block;
+            position: relative;
+            min-height: 180px;
+            padding: 27px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 15px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .tema:hover {
+            transform: translateY(-4px);
+            border-color: #93c5fd;
+            box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
+        }
+
+        .numero-tema {
+            color: #2563eb;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+
+        .tema h3 {
+            color: #123c69;
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .tema p {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.5;
+            padding-bottom: 25px;
+        }
+
+        .flecha {
+            position: absolute;
+            bottom: 22px;
+            left: 27px;
+            color: #2563eb;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        /* PIE */
+
+        footer {
+            background: #102f50;
+            color: #cbd5e1;
+            padding: 35px 8%;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* TABLET */
+
+        @media (max-width: 850px) {
+
+            .temas {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        /* MÓVIL */
+
+        @media (max-width: 600px) {
+
+            header {
+                height: auto;
+                padding: 20px;
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav {
+                gap: 16px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .intro h1 {
+                font-size: 38px;
+            }
+
+            .temas {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html">Lama Estudios</a>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="matematicas.html">Matemáticas</a>
+            <a href="#">Dibujo Técnico</a>
+            <a href="#">Recursos</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- RUTA -->
+
+        <div class="breadcrumb">
+            <a href="index.html">Inicio</a>
+            &nbsp;›&nbsp;
+            <a href="matematicas.html">Matemáticas</a>
+            &nbsp;›&nbsp;
+            1.º ESO
+        </div>
+
+
+        <!-- PRESENTACIÓN -->
+
+        <section class="intro">
+
+            <div class="etiqueta">
+                MATEMÁTICAS · ESO
+            </div>
+
+            <h1>1.º ESO</h1>
+
+            <p>
+                Apuntes, ejercicios, fichas, problemas y material
+                de Matemáticas organizado por temas.
+            </p>
+
+        </section>
+
+
+        <!-- TEMAS -->
+
+        <section class="contenido">
+
+            <h2>Temas</h2>
+
+            <div class="temas">
+
+
+                <a class="tema" href="#">
+                    <div class="numero-tema">TEMA 01</div>
+                    <h3>Números naturales</h3>
+                    <p>
+                        Operaciones, jerarquía, potencias
+                        y resolución de problemas.
+                    </p>
+                    <div class="flecha">Ver tema →</div>
+                </a>
+
+
+                <a class="tema" href="#">
+                    <div class="numero-tema">TEMA 02</div>
+                    <h3>Divisibilidad</h3>
+                    <p>
+                        Múltiplos, divisores, números primos,
+                        MCD y mcm.
+                    </p>
+                    <div class="flecha">Ver tema →</div>
+                </a>
+
+
+                <a class="tema" href="#">
+                    <div class="numero-tema">TEMA 03</div>
+                    <h3>Números enteros</h3>
+                    <p>
+                        Números positivos y negativos,
+                        operaciones y problemas.
+                    </p>
+                    <div class="flecha">Ver tema →</div>
+                </a>
+
+
+                <a class="tema" href="#">
+                    <div class="numero-tema">TEMA 04</div>
+                    <h3>Fracciones</h3>
+                    <p>
+                        Fracciones equivalentes, operaciones
+                        y resolución de problemas.
+                    </p>
+                    <div class="flecha">Ver tema →</div>
+                </a>
+
+
+                <a class="tema" href="#">
+                    <div class="numero-tema">TEMA 05</div>
+                    <h3>Números decimales</h3>
+                    <p>
+                        Operaciones con decimales,
+                        aproximaciones y problemas.
+                    </p>
+                    <div class="flecha">Ver tema →</div>
+                </a>
+
+
+                <a class="tema" href="#">
+                    <div class="numero-tema">TEMA 06</div>
+                    <h3>Álgebra</h3>
+                    <p>
+                        Expresiones algebraicas,
+                        ecuaciones sencillas y problemas.
+                    </p>
+                    <div class="flecha">Ver tema →</div>
+                </a>
+
+
+                <a class="tema" href="#">
+                    <div class="numero-tema">TEMA 07</div>
+                    <h3>Proporcionalidad</h3>
+                    <p>
+                        Razones, proporciones,
+                        regla de tres y porcentajes.
+                    </p>
+                    <div class="flecha">Ver tema →</div>
+                </a>
+
+
+                <a class="tema" href="#">
+                    <div class="numero-tema">TEMA 08</div>
+                    <h3>Geometría</h3>
+                    <p>
+                        Figuras planas, perímetros,
+                        áreas y elementos geométricos.
+                    </p>
+                    <div class="flecha">Ver tema →</div>
+                </a>
+
+
+                <a class="tema" href="#">
+                    <div class="numero-tema">TEMA 09</div>
+                    <h3>Estadística y probabilidad</h3>
+                    <p>
+                        Tablas, gráficos, parámetros estadísticos
+                        y probabilidad básica.
+                    </p>
+                    <div class="flecha">Ver tema →</div>
+                </a>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        © 2026 Lama Estudios · Matemáticas y Dibujo Técnico
+    </footer>
+
+</body>
+
+</html>

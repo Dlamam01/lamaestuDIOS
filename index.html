@@ -4,20 +4,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lama Estudios</title>
+
+    <title>Lama Estudios | Matemáticas y Dibujo Técnico</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f7f9fc;
+            color: #1f2937;
+        }
+
+        /* CABECERA */
+
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #163b65;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #374151;
+            margin-left: 28px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        /* PORTADA PRINCIPAL */
+
+        .hero {
+            min-height: 520px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #eef5ff, #ffffff);
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            color: #163b65;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            color: #5b6472;
+            max-width: 700px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 14px 27px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* ASIGNATURAS */
+
+        .asignaturas {
+            padding: 75px 8%;
+            text-align: center;
+        }
+
+        .asignaturas h2 {
+            font-size: 34px;
+            margin-bottom: 45px;
+            color: #163b65;
+        }
+
+        .tarjetas {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .tarjeta {
+            background-color: white;
+            width: 340px;
+            padding: 40px 30px;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        .tarjeta h3 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: #163b65;
+        }
+
+        .tarjeta p {
+            color: #667085;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .tarjeta a {
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        /* PIE */
+
+        footer {
+            margin-top: 40px;
+            background-color: #163b65;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        /* MÓVIL */
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
 
-    <h1>Lama Estudios</h1>
+    <header>
+        <div class="logo">Lama Estudios</div>
 
-    <p>Material educativo de Matemáticas y Dibujo Técnico.</p>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Matemáticas</a>
+            <a href="#">Dibujo Técnico</a>
+            <a href="#">Recursos</a>
+        </nav>
+    </header>
 
-    <h2>Matemáticas</h2>
-    <p>ESO y Bachillerato</p>
 
-    <h2>Dibujo Técnico</h2>
-    <p>Geometría, sistemas de representación y normalización.</p>
+    <main>
+
+        <section class="hero">
+
+            <h1>Aprende. Practica. Avanza.</h1>
+
+            <p>
+                Material educativo de Matemáticas y Dibujo Técnico
+                para ESO y Bachillerato.
+            </p>
+
+            <a class="boton" href="#asignaturas">
+                Ver materiales
+            </a>
+
+        </section>
+
+
+        <section class="asignaturas" id="asignaturas">
+
+            <h2>¿Qué quieres estudiar?</h2>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <h3>📐 Matemáticas</h3>
+
+                    <p>
+                        Teoría, ejercicios, problemas, fichas y recursos
+                        organizados por cursos.
+                    </p>
+
+                    <a href="#">Ver Matemáticas →</a>
+                </div>
+
+
+                <div class="tarjeta">
+                    <h3>✏️ Dibujo Técnico</h3>
+
+                    <p>
+                        Geometría, sistemas de representación,
+                        normalización y ejercicios resueltos.
+                    </p>
+
+                    <a href="#">Ver Dibujo Técnico →</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Lama Estudios · Material educativo</p>
+    </footer>
 
 </body>
 

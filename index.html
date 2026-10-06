@@ -14,224 +14,463 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f7f9fc;
-            color: #1f2937;
+        html {
+            scroll-behavior: smooth;
         }
 
-        /* CABECERA */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #1e293b;
+        }
+
+        /* =========================
+           CABECERA
+        ========================== */
 
         header {
-            background-color: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-            padding: 18px 8%;
+            height: 76px;
+            padding: 0 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background: rgba(255,255,255,0.96);
+            border-bottom: 1px solid #e7edf5;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         .logo {
             font-size: 25px;
-            font-weight: bold;
-            color: #163b65;
+            font-weight: 800;
+            color: #123c69;
+            letter-spacing: -0.5px;
+        }
+
+        nav {
+            display: flex;
+            gap: 34px;
         }
 
         nav a {
             text-decoration: none;
-            color: #374151;
-            margin-left: 28px;
-            font-weight: 500;
+            color: #475569;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.2s;
         }
 
         nav a:hover {
             color: #2563eb;
         }
 
-        /* PORTADA PRINCIPAL */
+
+        /* =========================
+           PORTADA
+        ========================== */
 
         .hero {
-            min-height: 520px;
+            min-height: 530px;
+            padding: 80px 20px;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #eef5ff, #ffffff);
+
+            background:
+                radial-gradient(circle at 20% 30%, #eaf3ff 0%, transparent 32%),
+                radial-gradient(circle at 80% 70%, #eef6ff 0%, transparent 30%),
+                #fbfdff;
+        }
+
+        .hero-contenido {
+            max-width: 900px;
+        }
+
+        .marca {
+            display: inline-block;
+            color: #2563eb;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            margin-bottom: 22px;
         }
 
         .hero h1 {
-            font-size: 52px;
-            color: #163b65;
-            margin-bottom: 18px;
+            font-size: 55px;
+            line-height: 1.08;
+            color: #123c69;
+            letter-spacing: -1.5px;
+            margin-bottom: 23px;
         }
 
-        .hero p {
-            font-size: 21px;
-            color: #5b6472;
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero-descripcion {
             max-width: 700px;
-            line-height: 1.6;
-            margin-bottom: 35px;
+            margin: 0 auto;
+            font-size: 20px;
+            line-height: 1.65;
+            color: #64748b;
+        }
+
+        .tipos-material {
+            margin-top: 20px;
+            color: #334155;
+            font-size: 15px;
+            font-weight: 600;
         }
 
         .boton {
             display: inline-block;
-            background-color: #2563eb;
+            margin-top: 34px;
+            padding: 15px 28px;
+            background: #2563eb;
             color: white;
-            padding: 14px 27px;
-            border-radius: 8px;
             text-decoration: none;
-            font-weight: bold;
+            border-radius: 9px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.20);
+            transition: 0.2s;
         }
 
         .boton:hover {
-            background-color: #1d4ed8;
+            background: #1d4ed8;
+            transform: translateY(-2px);
         }
 
-        /* ASIGNATURAS */
+
+        /* =========================
+           ASIGNATURAS
+        ========================== */
 
         .asignaturas {
-            padding: 75px 8%;
+            padding: 90px 8%;
+            background: #ffffff;
             text-align: center;
+        }
+
+        .titulo-seccion {
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #2563eb;
+            margin-bottom: 12px;
         }
 
         .asignaturas h2 {
-            font-size: 34px;
-            margin-bottom: 45px;
-            color: #163b65;
+            font-size: 36px;
+            color: #123c69;
+            margin-bottom: 50px;
         }
 
         .tarjetas {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 30px;
-            flex-wrap: wrap;
+            max-width: 900px;
+            margin: auto;
         }
 
         .tarjeta {
-            background-color: white;
-            width: 340px;
-            padding: 40px 30px;
-            border-radius: 14px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            position: relative;
+            overflow: hidden;
+            min-height: 290px;
+            padding: 42px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 18px;
             text-align: left;
+            transition: 0.25s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.10);
+            border-color: #bfdbfe;
+        }
+
+        .simbolo {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 14px;
+            background: #eff6ff;
+            color: #2563eb;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 28px;
         }
 
         .tarjeta h3 {
-            font-size: 25px;
-            margin-bottom: 15px;
-            color: #163b65;
+            font-size: 27px;
+            color: #123c69;
+            margin-bottom: 13px;
         }
 
         .tarjeta p {
-            color: #667085;
+            color: #64748b;
             line-height: 1.6;
-            margin-bottom: 20px;
+            margin-bottom: 27px;
         }
 
         .tarjeta a {
-            text-decoration: none;
             color: #2563eb;
-            font-weight: bold;
+            text-decoration: none;
+            font-weight: 700;
         }
 
-        /* PIE */
+
+        /* =========================
+           NIVELES
+        ========================== */
+
+        .niveles {
+            padding: 80px 8%;
+            background: #f6f9fd;
+            text-align: center;
+        }
+
+        .niveles h2 {
+            color: #123c69;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .lista-niveles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 13px;
+        }
+
+        .nivel {
+            background: white;
+            border: 1px solid #dce5f0;
+            padding: 14px 22px;
+            border-radius: 9px;
+            color: #334155;
+            font-weight: 700;
+            transition: 0.2s;
+        }
+
+        .nivel:hover {
+            color: #2563eb;
+            border-color: #93c5fd;
+        }
+
+
+        /* =========================
+           PIE
+        ========================== */
 
         footer {
-            margin-top: 40px;
-            background-color: #163b65;
-            color: white;
+            background: #102f50;
+            color: #cbd5e1;
+            padding: 35px 8%;
             text-align: center;
-            padding: 30px;
+            font-size: 14px;
         }
 
-        /* MÓVIL */
 
-        @media (max-width: 700px) {
+        /* =========================
+           MÓVIL
+        ========================== */
+
+        @media (max-width: 750px) {
 
             header {
+                height: auto;
+                padding: 20px;
                 flex-direction: column;
-                gap: 15px;
+                gap: 18px;
+            }
+
+            nav {
+                gap: 16px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
             nav a {
-                margin: 0 8px;
-                font-size: 14px;
+                font-size: 13px;
+            }
+
+            .hero {
+                min-height: 500px;
+                padding: 70px 22px;
             }
 
             .hero h1 {
-                font-size: 38px;
+                font-size: 39px;
             }
 
-            .hero p {
-                font-size: 18px;
+            .hero-descripcion {
+                font-size: 17px;
+            }
+
+            .tarjetas {
+                grid-template-columns: 1fr;
+            }
+
+            .asignaturas h2 {
+                font-size: 30px;
             }
         }
 
     </style>
 </head>
 
+
 <body>
 
+    <!-- CABECERA -->
+
     <header>
-        <div class="logo">Lama Estudios</div>
+
+        <div class="logo">
+            Lama Estudios
+        </div>
 
         <nav>
             <a href="#">Inicio</a>
-            <a href="#">Matemáticas</a>
-            <a href="#">Dibujo Técnico</a>
-            <a href="#">Recursos</a>
+            <a href="#matematicas">Matemáticas</a>
+            <a href="#dibujo">Dibujo Técnico</a>
+            <a href="#materiales">Recursos</a>
         </nav>
+
     </header>
 
 
     <main>
 
+        <!-- PORTADA -->
+
         <section class="hero">
 
-            <h1>Aprende. Practica. Avanza.</h1>
+            <div class="hero-contenido">
 
-            <p>
-                Material educativo de Matemáticas y Dibujo Técnico
-                para ESO y Bachillerato.
-            </p>
+                <div class="marca">
+                    LAMA ESTUDIOS
+                </div>
 
-            <a class="boton" href="#asignaturas">
-                Ver materiales
-            </a>
+                <h1>
+                    Matemáticas y Dibujo Técnico<br>
+                    <span>para entenderlos.</span>
+                </h1>
+
+                <p class="hero-descripcion">
+                    Material educativo para ESO y Bachillerato,
+                    organizado para aprender, practicar y avanzar.
+                </p>
+
+                <p class="tipos-material">
+                    Apuntes · Ejercicios · Fichas · Exámenes · Soluciones
+                </p>
+
+                <a href="#asignaturas" class="boton">
+                    Explorar materiales ↓
+                </a>
+
+            </div>
 
         </section>
 
 
+        <!-- ASIGNATURAS -->
+
         <section class="asignaturas" id="asignaturas">
 
-            <h2>¿Qué quieres estudiar?</h2>
+            <div class="titulo-seccion">
+                ASIGNATURAS
+            </div>
+
+            <h2>
+                Elige qué quieres estudiar
+            </h2>
 
             <div class="tarjetas">
 
-                <div class="tarjeta">
-                    <h3>📐 Matemáticas</h3>
+
+                <!-- MATEMÁTICAS -->
+
+                <div class="tarjeta" id="matematicas">
+
+                    <div class="simbolo">
+                        ∑
+                    </div>
+
+                    <h3>
+                        Matemáticas
+                    </h3>
 
                     <p>
-                        Teoría, ejercicios, problemas, fichas y recursos
-                        organizados por cursos.
+                        Teoría, ejercicios, problemas, fichas,
+                        exámenes y material organizado por cursos.
                     </p>
 
-                    <a href="#">Ver Matemáticas →</a>
+                    <a href="#">
+                        Ver Matemáticas →
+                    </a>
+
                 </div>
 
 
-                <div class="tarjeta">
-                    <h3>✏️ Dibujo Técnico</h3>
+                <!-- DIBUJO TÉCNICO -->
+
+                <div class="tarjeta" id="dibujo">
+
+                    <div class="simbolo">
+                        △
+                    </div>
+
+                    <h3>
+                        Dibujo Técnico
+                    </h3>
 
                     <p>
                         Geometría, sistemas de representación,
                         normalización y ejercicios resueltos.
                     </p>
 
-                    <a href="#">Ver Dibujo Técnico →</a>
+                    <a href="#">
+                        Ver Dibujo Técnico →
+                    </a>
+
                 </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- NIVELES -->
+
+        <section class="niveles" id="materiales">
+
+            <div class="titulo-seccion">
+                MATERIALES
+            </div>
+
+            <h2>
+                Material organizado por niveles
+            </h2>
+
+            <div class="lista-niveles">
+
+                <div class="nivel">1.º ESO</div>
+                <div class="nivel">2.º ESO</div>
+                <div class="nivel">3.º ESO</div>
+                <div class="nivel">4.º ESO</div>
+                <div class="nivel">1.º Bachillerato</div>
+                <div class="nivel">2.º Bachillerato</div>
 
             </div>
 
@@ -240,8 +479,10 @@
     </main>
 
 
+    <!-- PIE -->
+
     <footer>
-        <p>© 2026 Lama Estudios · Material educativo</p>
+        © 2026 Lama Estudios · Matemáticas y Dibujo Técnico
     </footer>
 
 </body>

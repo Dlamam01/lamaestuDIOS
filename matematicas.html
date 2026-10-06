@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matemáticas | Lama Estudios</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+        }
+
+        /* CABECERA */
+
+        header {
+            height: 76px;
+            padding: 0 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            border-bottom: 1px solid #e7edf5;
+        }
+
+        .logo a {
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 800;
+            color: #123c69;
+            letter-spacing: -0.5px;
+        }
+
+        nav {
+            display: flex;
+            gap: 34px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #475569;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        /* CABECERA MATEMÁTICAS */
+
+        .intro {
+            padding: 75px 20px 65px;
+            text-align: center;
+            background:
+                radial-gradient(circle at 20% 30%, #eaf3ff 0%, transparent 30%),
+                radial-gradient(circle at 80% 70%, #eef6ff 0%, transparent 30%),
+                #fbfdff;
+        }
+
+        .simbolo-principal {
+            width: 65px;
+            height: 65px;
+            margin: 0 auto 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eff6ff;
+            border-radius: 16px;
+            color: #2563eb;
+            font-size: 38px;
+            font-weight: bold;
+        }
+
+        .intro h1 {
+            font-size: 48px;
+            color: #123c69;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* CURSOS */
+
+        .cursos {
+            max-width: 1050px;
+            margin: auto;
+            padding: 70px 25px 90px;
+        }
+
+        .bloque {
+            margin-bottom: 65px;
+        }
+
+        .etiqueta {
+            color: #2563eb;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .bloque h2 {
+            color: #123c69;
+            font-size: 31px;
+            margin-bottom: 28px;
+        }
+
+        .rejilla {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .curso {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 28px 22px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .curso:hover {
+            transform: translateY(-4px);
+            border-color: #93c5fd;
+            box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
+        }
+
+        .numero {
+            font-size: 28px;
+            font-weight: 800;
+            color: #2563eb;
+            margin-bottom: 7px;
+        }
+
+        .nombre {
+            color: #123c69;
+            font-weight: 700;
+            font-size: 17px;
+        }
+
+        .descripcion {
+            color: #94a3b8;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        /* BACHILLERATO */
+
+        .rejilla-bach {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        /* PIE */
+
+        footer {
+            background: #102f50;
+            color: #cbd5e1;
+            padding: 35px 8%;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* MÓVIL */
+
+        @media (max-width: 800px) {
+
+            header {
+                height: auto;
+                padding: 20px;
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav {
+                gap: 16px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .intro h1 {
+                font-size: 39px;
+            }
+
+            .rejilla {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .rejilla-bach {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .rejilla {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html">Lama Estudios</a>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="matematicas.html">Matemáticas</a>
+            <a href="#">Dibujo Técnico</a>
+            <a href="#">Recursos</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="intro">
+
+            <div class="simbolo-principal">∑</div>
+
+            <h1>Matemáticas</h1>
+
+            <p>
+                Apuntes, ejercicios, problemas, fichas y exámenes<br>
+                organizados por curso y tema.
+            </p>
+
+        </section>
+
+
+        <section class="cursos">
+
+            <!-- ESO -->
+
+            <div class="bloque">
+
+                <div class="etiqueta">EDUCACIÓN SECUNDARIA</div>
+
+                <h2>ESO</h2>
+
+                <div class="rejilla">
+
+                    <a class="curso" href="#">
+                        <div class="numero">1.º</div>
+                        <div class="nombre">ESO</div>
+                        <div class="descripcion">Ver materiales →</div>
+                    </a>
+
+                    <a class="curso" href="#">
+                        <div class="numero">2.º</div>
+                        <div class="nombre">ESO</div>
+                        <div class="descripcion">Ver materiales →</div>
+                    </a>
+
+                    <a class="curso" href="#">
+                        <div class="numero">3.º</div>
+                        <div class="nombre">ESO</div>
+                        <div class="descripcion">Ver materiales →</div>
+                    </a>
+
+                    <a class="curso" href="#">
+                        <div class="numero">4.º</div>
+                        <div class="nombre">ESO</div>
+                        <div class="descripcion">Ver materiales →</div>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- BACHILLERATO -->
+
+            <div class="bloque">
+
+                <div class="etiqueta">BACHILLERATO</div>
+
+                <h2>Bachillerato</h2>
+
+                <div class="rejilla-bach">
+
+                    <a class="curso" href="#">
+                        <div class="numero">1.º</div>
+                        <div class="nombre">Bachillerato</div>
+                        <div class="descripcion">Ver materiales →</div>
+                    </a>
+
+                    <a class="curso" href="#">
+                        <div class="numero">2.º</div>
+                        <div class="nombre">Bachillerato</div>
+                        <div class="descripcion">Ver materiales →</div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        © 2026 Lama Estudios · Matemáticas y Dibujo Técnico
+    </footer>
+
+</body>
+
+</html>

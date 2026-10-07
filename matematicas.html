@@ -10,59 +10,10 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: var(--fondo);
-            color: var(--texto);
-        }
-
-        /* CABECERA */
-
-        header {
-            height: 76px;
-            padding: 0 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--cabecera-transparente);
-            border-bottom: 1px solid var(--secundario);
-        }
-
-        .logo a {
-            text-decoration: none;
-            font-size: 25px;
-            font-weight: 800;
-            color: var(--texto);
-            letter-spacing: -0.5px;
-        }
-
-        nav {
-            display: flex;
-            gap: 34px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--texto);
-            font-size: 15px;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            color: var(--acento);
-        }
-
-        /* CABECERA MATEMÁTICAS */
+        /* =========================
+           CABECERA MATEMÁTICAS
+        ========================== */
 
         .intro {
             padding: 75px 20px 65px;
@@ -108,7 +59,10 @@
             line-height: 1.6;
         }
 
-        /* CURSOS */
+
+        /* =========================
+           CURSOS
+        ========================== */
 
         .cursos {
             max-width: 1050px;
@@ -174,7 +128,10 @@
             margin-top: 10px;
         }
 
-        /* BACHILLERATO */
+
+        /* =========================
+           BACHILLERATO
+        ========================== */
 
         .rejilla-bach {
             display: grid;
@@ -182,32 +139,12 @@
             gap: 18px;
         }
 
-        /* PIE */
 
-        footer {
-            background: var(--texto);
-            color: var(--texto-footer);
-            padding: 35px 8%;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        /* MÓVIL */
+        /* =========================
+           RESPONSIVE MATEMÁTICAS
+        ========================== */
 
         @media (max-width: 800px) {
-
-            header {
-                height: auto;
-                padding: 20px;
-                flex-direction: column;
-                gap: 18px;
-            }
-
-            nav {
-                gap: 16px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
 
             .intro h1 {
                 font-size: 39px;

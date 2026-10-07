@@ -1,6 +1,48 @@
 :root {
+
+    /* =========================
+       PALETA PRINCIPAL
+    ========================== */
+
     --fondo: #F5F1E8;
     --texto: #34322F;
     --secundario: #A99F8E;
     --acento: #B86F52;
+
+
+    /* =========================
+       COLORES DERIVADOS
+    ========================== */
+
+    --texto-suave: #6F6961;
+
+    --blanco: #FFFFFF;
+    --superficie: #FCFAF6;
+
+    --fondo-suave: #EEE9E0;
+    --fondo-icono: #EFE7DC;
+
+    --borde: #DDD6CA;
+    --borde-suave: #D8D0C3;
+
+    --acento-hover: #9F5E45;
+
+    --texto-footer: #E8E1D7;
+
+
+    /* =========================
+       SOMBRAS
+    ========================== */
+
+    --sombra-acento: rgba(184, 111, 82, 0.20);
+    --sombra-tarjeta: rgba(52, 50, 47, 0.10);
+
+
+    /* =========================
+       FONDOS TRANSPARENTES
+    ========================== */
+
+    --cabecera-transparente: rgba(245, 241, 232, 0.96);
+    --acento-transparente: rgba(184, 111, 82, 0.10);
+    --secundario-transparente: rgba(169, 159, 142, 0.16);
 }

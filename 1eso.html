@@ -7,6 +7,8 @@
 
     <title>1.º ESO Matemáticas | Lama Estudios</title>
 
+    <link rel="stylesheet" href="styles.css">
+
     <style>
         * {
             margin: 0;
@@ -20,8 +22,8 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f8fafc;
-            color: #1e293b;
+            background: var(--fondo);
+            color: var(--texto);
         }
 
         /* CABECERA */
@@ -32,15 +34,15 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #ffffff;
-            border-bottom: 1px solid #e7edf5;
+            background: var(--cabecera-transparente);
+            border-bottom: 1px solid var(--secundario);
         }
 
         .logo a {
             text-decoration: none;
             font-size: 25px;
             font-weight: 800;
-            color: #123c69;
+            color: var(--texto);
         }
 
         nav {
@@ -50,13 +52,13 @@
 
         nav a {
             text-decoration: none;
-            color: #475569;
+            color: var(--texto);
             font-size: 15px;
             font-weight: 600;
         }
 
         nav a:hover {
-            color: #2563eb;
+            color: var(--acento);
         }
 
         /* MIGAS DE PAN */
@@ -66,11 +68,11 @@
             margin: auto;
             padding: 25px 25px 0;
             font-size: 14px;
-            color: #64748b;
+            color: var(--texto-suave);
         }
 
         .breadcrumb a {
-            color: #2563eb;
+            color: var(--acento);
             text-decoration: none;
         }
 
@@ -83,7 +85,7 @@
         }
 
         .etiqueta {
-            color: #2563eb;
+            color: var(--acento);
             font-size: 13px;
             font-weight: 800;
             letter-spacing: 2px;
@@ -91,13 +93,13 @@
         }
 
         .intro h1 {
-            color: #123c69;
+            color: var(--texto);
             font-size: 48px;
             margin-bottom: 15px;
         }
 
         .intro p {
-            color: #64748b;
+            color: var(--texto-suave);
             font-size: 18px;
             line-height: 1.6;
             max-width: 700px;
@@ -112,7 +114,7 @@
         }
 
         .contenido h2 {
-            color: #123c69;
+            color: var(--texto);
             font-size: 29px;
             margin-bottom: 30px;
         }
@@ -128,8 +130,8 @@
             position: relative;
             min-height: 180px;
             padding: 27px;
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
+            background: var(--blanco);
+            border: 1px solid var(--borde);
             border-radius: 15px;
             text-decoration: none;
             transition: 0.2s;
@@ -137,12 +139,12 @@
 
         .tema:hover {
             transform: translateY(-4px);
-            border-color: #93c5fd;
-            box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
+            border-color: var(--acento);
+            box-shadow: 0 12px 25px var(--sombra-tarjeta);
         }
 
         .numero-tema {
-            color: #2563eb;
+            color: var(--acento);
             font-size: 13px;
             font-weight: 800;
             letter-spacing: 1px;
@@ -150,13 +152,13 @@
         }
 
         .tema h3 {
-            color: #123c69;
+            color: var(--texto);
             font-size: 21px;
             margin-bottom: 10px;
         }
 
         .tema p {
-            color: #64748b;
+            color: var(--texto-suave);
             font-size: 14px;
             line-height: 1.5;
             padding-bottom: 25px;
@@ -166,7 +168,7 @@
             position: absolute;
             bottom: 22px;
             left: 27px;
-            color: #2563eb;
+            color: var(--acento);
             font-weight: 700;
             font-size: 14px;
         }
@@ -174,8 +176,8 @@
         /* PIE */
 
         footer {
-            background: #102f50;
-            color: #cbd5e1;
+            background: var(--texto);
+            color: var(--texto-footer);
             padding: 35px 8%;
             text-align: center;
             font-size: 14px;

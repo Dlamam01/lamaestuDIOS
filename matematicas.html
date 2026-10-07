@@ -7,6 +7,8 @@
 
     <title>Matemáticas | Lama Estudios</title>
 
+    <link rel="stylesheet" href="styles.css">
+
     <style>
         * {
             margin: 0;
@@ -20,8 +22,8 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f8fafc;
-            color: #1e293b;
+            background: var(--fondo);
+            color: var(--texto);
         }
 
         /* CABECERA */
@@ -32,15 +34,15 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #ffffff;
-            border-bottom: 1px solid #e7edf5;
+            background: var(--cabecera-transparente);
+            border-bottom: 1px solid var(--secundario);
         }
 
         .logo a {
             text-decoration: none;
             font-size: 25px;
             font-weight: 800;
-            color: #123c69;
+            color: var(--texto);
             letter-spacing: -0.5px;
         }
 
@@ -51,13 +53,13 @@
 
         nav a {
             text-decoration: none;
-            color: #475569;
+            color: var(--texto);
             font-size: 15px;
             font-weight: 600;
         }
 
         nav a:hover {
-            color: #2563eb;
+            color: var(--acento);
         }
 
         /* CABECERA MATEMÁTICAS */
@@ -65,10 +67,19 @@
         .intro {
             padding: 75px 20px 65px;
             text-align: center;
+
             background:
-                radial-gradient(circle at 20% 30%, #eaf3ff 0%, transparent 30%),
-                radial-gradient(circle at 80% 70%, #eef6ff 0%, transparent 30%),
-                #fbfdff;
+                radial-gradient(
+                    circle at 20% 30%,
+                    var(--acento-transparente) 0%,
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 80% 70%,
+                    var(--secundario-transparente) 0%,
+                    transparent 30%
+                ),
+                var(--fondo);
         }
 
         .simbolo-principal {
@@ -78,22 +89,22 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #eff6ff;
+            background: var(--fondo-icono);
             border-radius: 16px;
-            color: #2563eb;
+            color: var(--acento);
             font-size: 38px;
             font-weight: bold;
         }
 
         .intro h1 {
             font-size: 48px;
-            color: #123c69;
+            color: var(--texto);
             margin-bottom: 15px;
         }
 
         .intro p {
             font-size: 18px;
-            color: #64748b;
+            color: var(--texto-suave);
             line-height: 1.6;
         }
 
@@ -110,7 +121,7 @@
         }
 
         .etiqueta {
-            color: #2563eb;
+            color: var(--acento);
             font-size: 13px;
             font-weight: 800;
             letter-spacing: 2px;
@@ -118,7 +129,7 @@
         }
 
         .bloque h2 {
-            color: #123c69;
+            color: var(--texto);
             font-size: 31px;
             margin-bottom: 28px;
         }
@@ -130,8 +141,8 @@
         }
 
         .curso {
-            background: white;
-            border: 1px solid #e2e8f0;
+            background: var(--blanco);
+            border: 1px solid var(--borde);
             border-radius: 14px;
             padding: 28px 22px;
             text-decoration: none;
@@ -140,25 +151,25 @@
 
         .curso:hover {
             transform: translateY(-4px);
-            border-color: #93c5fd;
-            box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
+            border-color: var(--acento);
+            box-shadow: 0 12px 25px var(--sombra-tarjeta);
         }
 
         .numero {
             font-size: 28px;
             font-weight: 800;
-            color: #2563eb;
+            color: var(--acento);
             margin-bottom: 7px;
         }
 
         .nombre {
-            color: #123c69;
+            color: var(--texto);
             font-weight: 700;
             font-size: 17px;
         }
 
         .descripcion {
-            color: #94a3b8;
+            color: var(--texto-suave);
             font-size: 13px;
             margin-top: 10px;
         }
@@ -174,8 +185,8 @@
         /* PIE */
 
         footer {
-            background: #102f50;
-            color: #cbd5e1;
+            background: var(--texto);
+            color: var(--texto-footer);
             padding: 35px 8%;
             text-align: center;
             font-size: 14px;

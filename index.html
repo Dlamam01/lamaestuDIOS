@@ -38,7 +38,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(245, 241, 232, 0.96);
+            background: var(--cabecera-transparente);
             border-bottom: 1px solid var(--secundario);
             position: sticky;
             top: 0;
@@ -85,12 +85,12 @@
             background:
                 radial-gradient(
                     circle at 20% 30%,
-                    rgba(184, 111, 82, 0.10) 0%,
+                    var(--acento-transparente) 0%,
                     transparent 32%
                 ),
                 radial-gradient(
                     circle at 80% 70%,
-                    rgba(169, 159, 142, 0.16) 0%,
+                    var(--secundario-transparente) 0%,
                     transparent 30%
                 ),
                 var(--fondo);
@@ -126,7 +126,7 @@
             margin: 0 auto;
             font-size: 20px;
             line-height: 1.65;
-            color: #6F6961;
+            color: var(--texto-suave);
         }
 
         .tipos-material {
@@ -141,17 +141,17 @@
             margin-top: 34px;
             padding: 15px 28px;
             background: var(--acento);
-            color: #ffffff;
+            color: var(--blanco);
             text-decoration: none;
             border-radius: 9px;
             font-size: 15px;
             font-weight: 700;
-            box-shadow: 0 8px 20px rgba(184, 111, 82, 0.20);
+            box-shadow: 0 8px 20px var(--sombra-acento);
             transition: 0.2s;
         }
 
         .boton:hover {
-            background: #9F5E45;
+            background: var(--acento-hover);
             transform: translateY(-2px);
         }
 
@@ -162,7 +162,7 @@
 
         .asignaturas {
             padding: 65px 8%;
-            background: #FCFAF6;
+            background: var(--superficie);
             text-align: center;
         }
 
@@ -193,8 +193,8 @@
             overflow: hidden;
             min-height: 290px;
             padding: 42px;
-            background: #ffffff;
-            border: 1px solid #DDD6CA;
+            background: var(--blanco);
+            border: 1px solid var(--borde);
             border-radius: 18px;
             text-align: left;
             transition: 0.25s;
@@ -202,7 +202,7 @@
 
         .tarjeta:hover {
             transform: translateY(-6px);
-            box-shadow: 0 18px 40px rgba(52, 50, 47, 0.10);
+            box-shadow: 0 18px 40px var(--sombra-tarjeta);
             border-color: var(--secundario);
         }
 
@@ -213,7 +213,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 14px;
-            background: #EFE7DC;
+            background: var(--fondo-icono);
             color: var(--acento);
             font-size: 32px;
             font-weight: bold;
@@ -227,7 +227,7 @@
         }
 
         .tarjeta p {
-            color: #6F6961;
+            color: var(--texto-suave);
             line-height: 1.6;
             margin-bottom: 27px;
         }
@@ -245,7 +245,7 @@
 
         .niveles {
             padding: 80px 8%;
-            background: #EEE9E0;
+            background: var(--fondo-suave);
             text-align: center;
         }
 
@@ -263,8 +263,8 @@
         }
 
         .nivel {
-            background: #FCFAF6;
-            border: 1px solid #D8D0C3;
+            background: var(--superficie);
+            border: 1px solid var(--borde-suave);
             padding: 14px 22px;
             border-radius: 9px;
             color: var(--texto);
@@ -284,7 +284,7 @@
 
         footer {
             background: var(--texto);
-            color: #E8E1D7;
+            color: var(--texto-footer);
             padding: 35px 8%;
             text-align: center;
             font-size: 14px;
